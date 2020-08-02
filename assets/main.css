@@ -1,0 +1,236 @@
+/* --- Layout --- */
+
+/* normalize */
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding: 0 2em;
+}
+
+@media (max-width: 1024px) {
+  main {
+    margin-top: 4em;
+  }
+
+}
+#main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 3em;
+}
+/* buttons */
+
+/* header */
+.layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+  padding-right: 0;
+}
+
+/* footer*/
+footer {
+  flex: 0 1 auto;
+}
+
+footer.footer__center-section {
+  justify-content: center;
+  align-items: center;
+}
+
+/* general layout */
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-1 {
+  flex: 1 1 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mb-08 {
+  margin-bottom: 0.88em;
+}
+
+.hoverable:hover {
+  cursor: pointer;
+}
+
+/* --- Views ---- */
+
+.grid-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.row-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* Login */
+
+.login-card-wide.mdl-card {
+  width: 30em;
+}
+
+.login-card-wide > .mdl-card__title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  height: 13.5em;
+  background: url('../assets/media/GroceryBag.JPG') center / cover;
+}
+
+.login-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+#login-button {
+  margin-top: 1em;
+}
+
+.login--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card__text {
+  width: auto;
+}
+
+/* Create List */
+table a:hover {
+  cursor: pointer;
+}
+
+
+.shopping-card-wide {
+  flex: 1;
+  width: 55%;
+}
+
+.list-control {
+  flex: 1;
+  width: 100%;
+}
+
+.list-control__buttons {
+  display: flex;
+  flex-direction: row;
+  flex: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.list-control__buttons .button {
+  width: 18rem;
+}
+
+.button button {
+  width: inherit;
+}
+
+@media (max-width: 610px) {
+  .shopping-card-wide {
+    width: 100%;
+  }
+
+  .list-control__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-control__buttons > div {
+    width: 100%;
+  }
+
+  .list-control__buttons .button {
+    width: 100%
+  }
+}
+
+.shop-card-square > .mdl-card__title {
+  color: #fff;
+  background: url('../assets/media/tile-header.JPG') center 55% repeat;
+  filter: grayscale(100%);
+  height: 18em;
+  max-height: 18em;
+  transition: transform .5s;
+
+}
+
+.shop-card-square > .mdl-card__title:hover {
+  color: #fff;
+  background: url('../assets/media/tile-header.JPG') center 55% repeat;
+  filter: grayscale(0%);
+  transform: scale(1.025);
+}
+
+.dummy-card {
+  background: #c3c3c347;
+}
+
+.card-bottom {
+  max-height: 4.3125em;
+  height: 4.3125em;
+}
